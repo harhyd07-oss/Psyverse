@@ -1,0 +1,26 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Registration {
+  id String @id @default(cuid())
+  fullName String
+  email String @unique
+  rollNumber String? @unique
+  department String
+  yearOfStudy String
+  phone String?
+  accessibilityRequest String?
+  createdAt DateTime @default(now())
+}
+model AnonymousThought {
+  id String @id @default(cuid())
+  message String @db.VarChar(1500)
+  createdAt DateTime @default(now())
+}
