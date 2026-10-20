@@ -1,0 +1,7 @@
+"use client";
+import {Suspense} from "react";
+import {useSearchParams} from "next/navigation";
+import Link from "next/link";
+import {Check} from "lucide-react";
+function SuccessContent(){const searchParams=useSearchParams();const shared=searchParams.get("thought")==="shared";return <main className="flow-shell"><header className="flow-header"><Link className="flow-brand" href="/"><span className="flow-mark">P</span><span><b>PSYVERSE</b><small>HITAM · STUDENT WELLBEING</small></span></Link></header><section className="success-wrap"><span className="success-mark"><Check/></span><p className="eyebrow">THANK YOU</p><h1>You’re registered<br/>for <em>Psyverse.</em></h1><p>{shared?"Your registration is complete, and your thought has been shared. Thank you for adding your voice.":"Your registration is complete. We look forward to seeing you at Psyverse."}</p><Link className="submit-button success-link" href="/">Back to Psyverse <span aria-hidden="true">→</span></Link></section><footer className="flow-footer"><span>Psyverse · HITAM student wellbeing</span><span>Registration complete</span></footer></main>}
+export default function SuccessPage(){return <Suspense fallback={<main className="flow-shell"><p className="success-wrap">Loading confirmation…</p></main>}><SuccessContent/></Suspense>}
