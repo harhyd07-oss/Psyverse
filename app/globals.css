@@ -173,3 +173,18 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 .event-bottom{display:flex;align-items:center;justify-content:space-between;gap:18px}
 @media(max-width:760px){.gain{padding-top:58px;padding-bottom:60px}.gain-head{grid-template-columns:1fr;gap:12px}.benefit-list{grid-template-columns:1fr}.agenda-list li{grid-template-columns:1fr;gap:4px}.event-bottom{align-items:stretch;flex-direction:column}.event-bottom .button{width:100%}}
 @media(max-width:700px){.header{padding:0 3.5%}.brand{gap:8px;min-width:0}.brand-logo-slot{width:32px;height:32px}.brand>span:last-child{min-width:0}.brand small{font-size:7px;letter-spacing:.07em;white-space:nowrap}.nav{display:flex;position:static;inset:auto;padding:0;background:transparent;border:0;box-shadow:none;gap:0;flex:none}.nav>a:not(.nav-cta){display:none}.nav a.nav-cta,.nav a.nav-cta:hover,.nav a.nav-cta:focus-visible{min-height:42px;padding:0 12px;font-size:11px;margin:0}.nav a.nav-cta svg{width:14px;height:14px}}
+
+/* Mobile participation flow */
+.mobile-participation-controls{display:none}
+@media(max-width:700px){
+ .mobile-participation-controls{display:block;margin-bottom:22px}
+ .mobile-choice-actions,.mobile-optional-step{display:flex;flex-direction:column;gap:12px}
+ .mobile-choice-actions .submit-button,.mobile-optional-step>.submit-button,.mobile-secondary-button{width:100%;min-height:48px;justify-content:center}
+ .mobile-secondary-button{display:inline-flex;align-items:center;gap:12px;padding:0 18px;border:1px solid var(--psy-indigo);background:transparent;color:var(--psy-indigo);font:600 12px Arial,sans-serif;cursor:pointer}
+ .mobile-back-button{display:inline-flex;min-height:44px;align-items:center;padding:8px 0;margin-bottom:14px;border:0;background:transparent;color:var(--psy-indigo);font:600 12px Arial,sans-serif;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+ .mobile-optional-step h3{margin:0}
+ .mobile-optional-step .column-copy{margin-bottom:8px}
+ .mobile-flow-choices .interaction-columns,.mobile-flow-optional .interaction-columns,.mobile-flow-done .interaction-columns{display:none}
+ .mobile-flow-registration .interaction-column,.mobile-flow-thoughts .interaction-column{display:none}
+ .mobile-flow-registration #registration,.mobile-flow-thoughts .mobile-thought-column{display:block}
+}
