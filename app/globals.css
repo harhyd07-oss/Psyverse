@@ -159,4 +159,17 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 .nav a.nav-cta:hover{background:#35356f;transform:translateY(-1px)}
 .nav a.nav-cta:focus-visible{outline:3px solid var(--psy-indigo);outline-offset:3px}
 .nav a.nav-cta svg{flex:none;color:currentColor}
+.gain{padding-top:78px;padding-bottom:82px;background:var(--psy-ivory)}
+.gain-head{display:grid;grid-template-columns:1fr .7fr;align-items:end;gap:9%;margin-bottom:28px}
+.gain-head h2{font:500 clamp(39px,4.2vw,56px)/1.13 Georgia,'Times New Roman',serif;letter-spacing:-.03em;color:var(--psy-ink);margin:0}
+.gain-head>p{max-width:390px;margin:0 0 5px;color:var(--psy-charcoal);font-size:12px;line-height:1.75}
+.benefit-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--psy-border);display:grid;grid-template-columns:1fr 1fr;column-gap:36px}
+.benefit-list li{display:grid;grid-template-columns:36px 1fr;gap:8px;margin:0;padding:15px 0;border-bottom:1px solid var(--psy-border);color:var(--psy-charcoal);font-size:13px;line-height:1.6}
+.benefit-list li b{font:700 11px Arial,sans-serif;letter-spacing:.08em;color:var(--psy-indigo)}
+.agenda-list{list-style:none;counter-reset:agenda;margin:24px 0 0;padding:0;border-top:1px solid var(--psy-border)}
+.agenda-list li{counter-increment:agenda;position:relative;display:grid;grid-template-columns:minmax(180px,.7fr) 1fr;gap:20px;padding:17px 0;border-bottom:1px solid var(--psy-border);font-size:13px;line-height:1.6}
+.agenda-list li b{color:var(--psy-ink);font-weight:700}
+.agenda-list li span{color:var(--psy-charcoal)}
+.event-bottom{display:flex;align-items:center;justify-content:space-between;gap:18px}
+@media(max-width:760px){.gain{padding-top:58px;padding-bottom:60px}.gain-head{grid-template-columns:1fr;gap:12px}.benefit-list{grid-template-columns:1fr}.agenda-list li{grid-template-columns:1fr;gap:4px}.event-bottom{align-items:stretch;flex-direction:column}.event-bottom .button{width:100%}}
 @media(max-width:700px){.header{padding:0 3.5%}.brand{gap:8px;min-width:0}.brand-logo-slot{width:32px;height:32px}.brand>span:last-child{min-width:0}.brand small{font-size:7px;letter-spacing:.07em;white-space:nowrap}.nav{display:flex;position:static;inset:auto;padding:0;background:transparent;border:0;box-shadow:none;gap:0;flex:none}.nav>a:not(.nav-cta){display:none}.nav a.nav-cta,.nav a.nav-cta:hover,.nav a.nav-cta:focus-visible{min-height:42px;padding:0 12px;font-size:11px;margin:0}.nav a.nav-cta svg{width:14px;height:14px}}
