@@ -176,6 +176,8 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 
 /* Mobile participation flow */
 .mobile-participation-controls{display:none}
+.interaction-column .thought-success{display:flex;flex-direction:column;align-items:flex-start;gap:14px;padding:22px;background:var(--psy-parchment);border:1px solid var(--psy-border)}
+.interaction-column .thought-success h3{margin:0}
 @media(max-width:700px){
  .mobile-participation-controls{display:block;margin-bottom:22px}
  .mobile-choice-actions,.mobile-optional-step{display:flex;flex-direction:column;gap:12px}
@@ -187,4 +189,6 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
  .mobile-flow-choices .interaction-columns,.mobile-flow-optional .interaction-columns,.mobile-flow-done .interaction-columns{display:none}
  .mobile-flow-registration .interaction-column,.mobile-flow-thoughts .interaction-column{display:none}
  .mobile-flow-registration #registration,.mobile-flow-thoughts .mobile-thought-column{display:block}
+ .interaction-column .thought-success{padding:19px}
+ .interaction-column .thought-success .submit-button{width:100%;justify-content:center}
 }
