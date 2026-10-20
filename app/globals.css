@@ -153,7 +153,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 .flow-status.error{background:#f8e5dc;color:#783d2c}
 
 /* Header logo slot and high-contrast Register action */
-.brand-logo-slot{display:block;width:40px;height:40px;flex:none}
+.brand-logo-slot{display:block;width:40px;height:40px;flex:none;object-fit:contain}
 .brand{gap:12px}
 .nav a.nav-cta,.nav a.nav-cta:hover,.nav a.nav-cta:focus-visible{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:44px;padding:0 20px;background:var(--psy-indigo);color:var(--psy-white);font-size:12px;font-weight:700;line-height:1;border-radius:2px;white-space:nowrap;transition:background-color .16s ease,transform .16s ease}
 .nav a.nav-cta:hover{background:#35356f;transform:translateY(-1px)}
