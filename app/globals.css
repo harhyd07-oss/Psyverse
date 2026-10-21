@@ -192,3 +192,34 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
  .interaction-column .thought-success{padding:19px}
  .interaction-column .thought-success .submit-button{width:100%;justify-content:center}
 }
+
+/* Mobile spacing refinements; preserve the existing section sequence. */
+@media(max-width:700px){
+ .hero{padding:42px 6% 34px}
+ .hero .eyebrow{margin-bottom:18px}
+ .hero h1{margin-bottom:12px}
+ .hero-tagline{margin-bottom:16px}
+ .hero .sublead{margin-bottom:18px;line-height:1.65}
+ .hero-art{height:190px;margin-top:24px}
+ .hero-art-label{left:16px;top:14px}
+ .hero-art-quote{font-size:28px}
+ .ticker{min-height:0;flex-wrap:wrap;justify-content:flex-start;gap:8px 18px;padding:14px 6%;font-size:9px;white-space:normal;line-height:1.5}
+ .participate{padding-top:52px;padding-bottom:50px}
+ .participate-head{gap:12px;margin-bottom:24px}
+ .participate-head>p{line-height:1.65}
+ .mobile-participation-controls{margin-bottom:18px}
+ .interaction-columns{gap:23px}
+ .interaction-column+.interaction-column{padding-top:21px}
+ .interaction-column .registration-form,.interaction-column .thought-form{padding:17px}
+ .interaction-column .privacy-copy p,.interaction-column .crisis-copy p,.interaction-column .privacy-details p{font-size:11px;line-height:1.6}
+ .about,.gain{padding-top:52px;padding-bottom:48px}
+ .kicker{margin-bottom:20px}
+ .about-head{gap:14px}
+ .about-head p{line-height:1.7}
+ .gain-head{gap:10px;margin-bottom:20px}
+ .benefit-list li{padding:13px 0;font-size:12px;line-height:1.55}
+ .event{padding-top:46px;padding-bottom:46px;gap:24px}
+ .event-art{min-height:145px}
+ .agenda-list{margin-top:18px}
+ .agenda-list li{padding:14px 0;font-size:12px}
+}
