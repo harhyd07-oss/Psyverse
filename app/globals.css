@@ -193,6 +193,11 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
  .interaction-column .thought-success .submit-button{width:100%;justify-content:center}
 }
 
+/* Keep the event CTA's hover and pressed colors within the Psyverse palette. */
+.event-bottom .button.pale{transition:background-color .2s ease,transform .2s ease}
+.event-bottom .button.pale:hover{background:#35356f;color:var(--psy-white);transform:translateY(-1px)}
+.event-bottom .button.pale:active{background:#30305f;color:var(--psy-white);transform:translateY(0)}
+
 /* Mobile spacing refinements; preserve the existing section sequence. */
 @media(max-width:700px){
  .hero{padding:42px 6% 34px}
